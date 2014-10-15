@@ -286,7 +286,7 @@ object ScaldingBuild extends Build {
     previousArtifact := None,
     libraryDependencies <++= (scalaVersion) { scalaVersion => Seq(
       "org.apache.hadoop" % "hadoop-core" % hadoopVersion % "provided",
-      "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.2.3"
+      "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.3.1"
     )
     }
   ).dependsOn(scaldingCore)
